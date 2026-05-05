@@ -1,0 +1,42 @@
+{
+  "name": "jarvis-lite",
+  "version": "1.0.0",
+  "description": "Jarvis Lite — Your Personal AI, Powered by Intelligence, Not Money.",
+  "main": "src/main/main.js",
+  "scripts": {
+    "start": "electron .",
+    "lint": "eslint src/",
+    "build": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "author": "Eban",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.1.8",
+    "eslint": "^8.57.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  },
+  "build": {
+    "appId": "com.jarvislite.app",
+    "productName": "Jarvis Lite",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "src/**/*",
+      "package.json"
+    ],
+    "mac": {
+      "target": "dmg"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  }
+}
