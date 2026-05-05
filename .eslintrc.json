@@ -1,0 +1,22 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2021": true
+  },
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "globals": {
+    "app": "readonly",
+    "chatController": "readonly",
+    "markdownRenderer": "readonly",
+    "settingsManager": "readonly"
+  },
+  "rules": {
+    "no-unused-vars": "warn",
+    "no-undef": "error",
+    "semi": ["warn", "always"],
+    "quotes": ["warn", "single"]
+  }
+}
